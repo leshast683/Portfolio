@@ -1,0 +1,195 @@
+.contact {
+  padding: 4rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #f5f3ef;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 6rem;
+  margin-top: 0.5rem;
+  margin-bottom: 4rem;
+  font-weight: bold;
+}
+
+.formContainer {
+  display: flex;
+  gap: 4rem;
+}
+
+.leftSection {
+  flex: 1;
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: #000;
+  color: white;
+  border-radius: 20px;
+  margin-bottom: 1rem;
+}
+
+.socialMediaIcons {
+  margin-top: 2rem;
+  margin-left: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.socialIcon {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s ease;
+}
+
+.socialMediaIcons a:hover .socialIcon {
+  transform: scale(1.2);
+}
+
+.form {
+  flex: 2;
+}
+
+.formRow {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.formGroup {
+  flex: 1;
+  margin-bottom: 1.5rem;
+}
+
+.formGroup label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.formGroup input,
+.formGroup textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: none;
+  border-bottom: 1px solid #000;
+  background: transparent;
+  font-size: 1rem;
+}
+
+.formGroup textarea {
+  height: 100px;
+  resize: vertical;
+  margin-bottom: 2rem;
+}
+
+.formActions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+button {
+  background: #000;
+  color: white;
+  padding: 0.75rem 2rem;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+button:disabled {
+  background: #666;
+  cursor: not-allowed;
+}
+
+.success {
+  color: green;
+  margin-top: 1rem;
+}
+
+.error {
+  color: red;
+  margin-top: 1rem;
+}
+
+@media (max-width: 1024px) {
+  .contact {
+    padding: 3rem 2rem;
+  }
+
+  h1 {
+    font-size: 5rem;
+    margin-bottom: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact {
+    padding: 2rem 1rem;
+  }
+
+  .formContainer {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .formRow {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .socialMediaIcons {
+    flex-direction: row;
+    justify-content: center;
+    gap: 1.5rem;
+    margin: 1.5rem 0;
+  }
+
+  .socialIcon {
+    width: 35px;
+    height: 35px;
+  }
+
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  }
+
+  .formGroup input,
+  .formGroup textarea {
+    font-size: 16px;
+    padding: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact {
+    padding: 1.5rem 0.75rem;
+    padding-bottom: 5rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .socialIcon {
+    width: 30px;
+    height: 30px;
+  }
+
+  button {
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .formActions {
+    margin-bottom: 1rem;
+  }
+}
